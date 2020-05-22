@@ -1,0 +1,14 @@
+{
+    "name": "boriskov/hexlet-game",
+    "description": "first project",
+    "authors": [
+        {
+            "name": "BorisKov",
+            "email": "multiallin@gmail.com"
+        }
+    ],
+    "require": {}
+    "bin": [
+    	 "bin/brain-games"
+    ]
+}
