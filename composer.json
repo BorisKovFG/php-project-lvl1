@@ -1,6 +1,7 @@
 {
     "name": "boriskov/hexlet-game",
     "description": "first project",
+    "license": "MIT",
     "authors": [
         {
             "name": "BorisKov",
