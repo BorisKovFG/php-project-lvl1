@@ -7,7 +7,7 @@ namespace BrainGames\Cli;
 
 function run()
 {
-    line('Welcome to the Brain Game!');
+    line('Welcome to the Brain Game!!!!!!');
     $name = prompt('May I have your name?');
     line("Hello, %s!", $name);
 }
