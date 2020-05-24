@@ -7,11 +7,19 @@ on:
 jobs:
   build:
 
+    # указываем среду
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
-
-    - name: Run Linter
-      run: make lint
-
+      # Для того что бы следующие команды работали с корнем проекта
+      - name: Git clone
+        uses: actions/checkout@v2
+      
+      # Развернем проект
+      - name: Make install
+        run: |
+          make install
+      # Запускаем линтер
+      - name: make test
+        run: |
+          make lint
