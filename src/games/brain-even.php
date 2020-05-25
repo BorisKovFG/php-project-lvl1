@@ -30,5 +30,5 @@ function run()
             }
         }
     }
-    line("Congratulations {$name}!");
+    line("Congratulations, {$name}!");
 }
