@@ -27,7 +27,7 @@ function run()
             }
             if ($count > 0) {
                 --$count;
-            }       
+            }
         }
     }
     line("Congratulations {$name}!");
