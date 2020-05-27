@@ -25,7 +25,7 @@ function run()
             } else {
                 line($answer . " is wrong answer ;(. Correct answer was 'no'");
             }
-            $count = 0;  
+            $count = 0;
         }
     }
     line("Congratulations, {$name}!");

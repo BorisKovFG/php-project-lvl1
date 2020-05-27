@@ -19,26 +19,26 @@ function run()
         $chChar = $char [rand(0, 2)];
         $result = 0;
         switch ($chChar) {
-        case "-":
-            $result = $randNumb1 - $randNumb2;
-            break;
-        case "+":
-            $result = $randNumb1 + $randNumb2;
-            break;
-        case "*":
-            $result = $randNumb1 * $randNumb2;
-            break;
-        default:
-            return false;
+            case "-":
+                $result = $randNumb1 - $randNumb2;
+                break;
+            case "+":
+                $result = $randNumb1 + $randNumb2;
+                break;
+            case "*":
+                $result = $randNumb1 * $randNumb2;
+                break;
+            default:
+                return false;
         }
         line("Question: {$randNumb1}{$chChar}{$randNumb2}");
         $answer = prompt('Your answer: ');
-        if ($answer === (string) $result ) {
+        if ($answer === (string) $result) {
             line("Correct!");
             ++$count;
         } else {
                 line($answer . " is wrong answer ;(. Correct answer was {$result}");
-                $count = 0;        
+                $count = 0;
         }
     }
     line("Congratulations, {$name}!");

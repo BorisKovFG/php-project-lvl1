@@ -21,17 +21,17 @@ function run()
             $chek1 = $randNumb1 / $n;
             $chek2 = $randNumb2 / $n;
             $result = (is_int($chek1)  && is_int($chek2)) ? $n : 0;
-            $n--; 
+            $n--;
         }
         line("Question: {$randNumb1} {$randNumb2}");
         $answer = prompt('Your answer: ');
-        if ($answer === (string) $result ) {
+        if ($answer === (string) $result) {
             line("Correct!");
             ++$count;
         } else {
                 line($answer . " is wrong answer ;(. Correct answer was {$result}");
-                $count = 0;        
-        }     
+                $count = 0;
+        }
     }
     line("Congratulations, {$name}!");
 }
