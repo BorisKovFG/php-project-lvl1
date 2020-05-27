@@ -7,4 +7,5 @@
 
 brain-even;
 brain-calc,
-brain-gcd
+brain-gcd,
+brain-progression.
