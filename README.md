@@ -6,4 +6,5 @@
 Команда запуска игры:
 
 brain-even;
-brain-calc.
+brain-calc,
+brain-gcd

@@ -1,6 +1,6 @@
 <?php
 
-namespace BrainGames\Calc;
+namespace BrainGames\Gcd;
 
   use function cli\line;
   use function cli\prompt;
@@ -9,29 +9,21 @@ namespace BrainGames\Calc;
 function run()
 {
     line('Welcome to the Brain Game!!!!!!');
-    line('What is the result of the expression?' . "\n");
+    line('Find the greatest common divisor of given numbers.' . "\n");
     $name = hello();
     $count = 0;
     while ($count < 3) {
         $randNumb1 = rand(0, 100);
         $randNumb2 = rand(0, 100);
-        $char = ["+", "-", "*"];
-        $chChar = $char [rand(0, 2)];
+        $n = ($randNumb1 > $randNumb2) ? $randNumb2 : $randNumb1;
         $result = 0;
-        switch ($chChar) {
-        case "-":
-            $result = $randNumb1 - $randNumb2;
-            break;
-        case "+":
-            $result = $randNumb1 + $randNumb2;
-            break;
-        case "*":
-            $result = $randNumb1 * $randNumb2;
-            break;
-        default:
-            return false;
+        while ($result < 1) {
+            $chek1 = $randNumb1 / $n;
+            $chek2 = $randNumb2 / $n;
+            $result = (is_int($chek1)  && is_int($chek2)) ? $n : 0;
+            $n--; 
         }
-        line("Question: {$randNumb1}{$chChar}{$randNumb2}");
+        line("Question: {$randNumb1} {$randNumb2}");
         $answer = prompt('Your answer: ');
         if ($answer === (string) $result ) {
             line("Correct!");
@@ -39,7 +31,7 @@ function run()
         } else {
                 line($answer . " is wrong answer ;(. Correct answer was {$result}");
                 $count = 0;        
-        }
+        }     
     }
     line("Congratulations, {$name}!");
 }
