@@ -8,4 +8,6 @@
 brain-even;
 brain-calc,
 brain-gcd,
-brain-progression.
+brain-progression
+
+[![asciicast](https://asciinema.org/a/n53tJaZ8FcTcnGuhTX7JG7sNl.svg)](https://asciinema.org/a/n53tJaZ8FcTcnGuhTX7JG7sNl)
