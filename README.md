@@ -1,23 +1,25 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/131a0b4a3b14bc576eec/maintainability)](https://codeclimate.com/github/BorisKovFG/php-project-lvl1/maintainability)
 [![Build Status](https://travis-ci.com/BorisKovFG/php-project-lvl1.svg?branch=master)](https://travis-ci.com/BorisKovFG/php-project-lvl1)
 
-Для установки пакета используя composer, выполните в терминале composer global require boriskov/hexlet-game
+#Проект: Игры разума
 
-Команда запуска игры:
+Это первый мой проект в рамках Hexlet.io. Проект: Игры разума. Немного отошёл от плана: изменил brain-games - добавил выборку игр.
 
-brain-even
+Для установки пакета используя composer, выполните в терминале  `composer global require boriskov/hexlet-game`
+Для удаления пакета используя composer, выполните в терминале  `composer global remove boriskov/hexlet-game`
 
-brain-calc
+##Команда запуска игры:
 
-brain-gcd
+1. `brain-even` Игра: "Проверка на чётность"
+2. `brain-calc` Игра: "Калькулятор"
+3. `brain-gcd` Игра "НОД"
+4. `brain-progression` Игра "Арифметическая прогрессия"
+5. `brain-prime` Игра "Простое ли число?"
 
-brain-progression
+###Если не хотите писать названия игр в коммандной строке. То выберите любую игру, введя эту комманду:
+`brain-games` 
 
-brain-prime
-
-brain-games 
-
-Видео установки игры и тест игры:
+##Видео установки и тест игр:
 
 brain-even
 [![asciicast](https://asciinema.org/a/4hIwTvoPFpBN8O0XZtzxml5oG.svg)](https://asciinema.org/a/4hIwTvoPFpBN8O0XZtzxml5oG)
@@ -33,8 +35,6 @@ brain-progression
 
 brain-prime
 [![asciicast](https://asciinema.org/a/334720.svg)](https://asciinema.org/a/334720)
-
-Если не хочется выбирать псать в коммандной строке название игр можно выбрать в одном месте:
 
 brain-games 
 [![asciicast](https://asciinema.org/a/334721.svg)](https://asciinema.org/a/334721)
