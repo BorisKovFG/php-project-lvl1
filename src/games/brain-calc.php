@@ -5,12 +5,12 @@ namespace BrainGames\Calc;
   use function cli\line;
   use function cli\prompt;
   use function BrainGames\Cli\hello;
+  use function BrainGames\Cli\answer;
 
 function run()
 {
-    line('Welcome to the Brain Game!!!!!!');
-    line('What is the result of the expression?' . "\n");
-    $name = hello();
+    $textOfQuestion = "What is the result of the expression?";
+    $name = hello($textOfQuestion);
     $count = 0;
     while ($count < 3) {
         $randNumb1 = rand(0, 100);
@@ -31,15 +31,8 @@ function run()
             default:
                 return false;
         }
-        line("Question: {$randNumb1}{$chChar}{$randNumb2}");
-        $answer = prompt('Your answer: ');
-        if ($answer === (string) $result) {
-            line("Correct!");
-            ++$count;
-        } else {
-                line($answer . " is wrong answer ;(. Correct answer was {$result}");
-                $count = 0;
-        }
+        $queistion = "{$randNumb1}{$chChar}{$randNumb2}";
+        answer($queistion, $result, $count);
     }
     line("Congratulations, {$name}!");
 }

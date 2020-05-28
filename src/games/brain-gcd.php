@@ -5,12 +5,12 @@ namespace BrainGames\Gcd;
   use function cli\line;
   use function cli\prompt;
   use function BrainGames\Cli\hello;
+  use function BrainGames\Cli\answer;
 
 function run()
 {
-    line('Welcome to the Brain Game!!!!!!');
-    line('Find the greatest common divisor of given numbers.' . "\n");
-    $name = hello();
+    $textOfQuestion = "Find the greatest common divisor of given numbers.";
+    $name = hello($textOfQuestion);
     $count = 0;
     while ($count < 3) {
         $randNumb1 = rand(0, 100);
@@ -23,15 +23,8 @@ function run()
             $result = (is_int($chek1)  && is_int($chek2)) ? $n : 0;
             $n--;
         }
-        line("Question: {$randNumb1} {$randNumb2}");
-        $answer = prompt('Your answer: ');
-        if ($answer === (string) $result) {
-            line("Correct!");
-            ++$count;
-        } else {
-                line($answer . " is wrong answer ;(. Correct answer was {$result}");
-                $count = 0;
-        }
+        $question = "{$randNumb1} {$randNumb2}";
+        answer($question, $result, $count);
     }
     line("Congratulations, {$name}!");
 }

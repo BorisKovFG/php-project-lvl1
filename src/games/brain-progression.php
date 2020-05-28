@@ -5,16 +5,16 @@ namespace BrainGames\Progression;
   use function cli\line;
   use function cli\prompt;
   use function BrainGames\Cli\hello;
+  use function BrainGames\Cli\answer;
 
 function run()
 {
-    line('Welcome to the Brain Game!!!!!!');
-    line('What number is missing in the progression?' . "\n");
-    $name = hello();
+    $textOfQuestion = "What number is missing in the progression?";
+    $name = hello($textOfQuestion);
     $count = 0;
     while ($count < 3) {
         $except = rand(0, 9);
-        $d = rand(0, 9);
+        $d = rand(1, 9);
         $n = 10;
         $cur = [];
         $next = $d;
@@ -30,15 +30,7 @@ function run()
             }
         }
         $queistion = implode(" ", $cur);
-        line("Question: {$queistion}");
-        $answer = prompt('Your answer: ');
-        if ($answer === (string) $result) {
-            line("Correct!");
-            ++$count;
-        } else {
-                line($answer . " is wrong answer ;(. Correct answer was {$result}");
-                $count = 0;
-        }
+        answer($queistion, $result, $count);
     }
     line("Congratulations, {$name}!");
 }
