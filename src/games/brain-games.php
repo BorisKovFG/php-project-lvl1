@@ -15,18 +15,13 @@ function runBrainGames()
 {
     line("\nPlease, chose № of game for playing!\n");
     $headers = array(' № ', 'Name of Game');
-    $data = array(
-    array(' 1 ', 'brain-even'),
-    array(' 2 ', 'brain-calc'),
-    array(' 3 ', 'brain-gcd'),
-    array(' 4 ', 'brain-progression'),
-    array(' 5 ', 'brain-prime'));
+    $data = array (array(' 1 ', 'brain-even'), array(' 2 ', 'brain-calc'), array(' 3 ', 'brain-gcd'),
+    array(' 4 ', 'brain-progression'), array(' 5 ', 'brain-prime'));
     $table = new \cli\Table();
     $table->setHeaders($headers);
     $table->setRows($data);
     $table->setRenderer(new \cli\table\Ascii([3, 18]));
     $table->display();
-    $choise = 0;
     $choise = prompt('Number');
     switch ($choise) {
         case "1":
