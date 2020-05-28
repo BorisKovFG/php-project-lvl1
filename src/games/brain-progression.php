@@ -20,15 +20,11 @@ function run()
         $next = $d;
         $result = 0;
         for ($i = 0; $i < $n; $i++) {
-            if ($i != $except) {
-                $cur[$i] = $next;
-                $next += $d;
-            } else {
-                $result = $next;
-                $cur[$i] = "..";
-                $next += $d;
-            }
+            $cur[$i] = $next;
+            $next += $d;
         }
+        $result = $cur[$except];
+        $cur[$except] = "..";
         $queistion = implode(" ", $cur);
         answer($queistion, $result, $count);
     }

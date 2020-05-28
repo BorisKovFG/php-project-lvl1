@@ -28,8 +28,6 @@ function run()
             case "*":
                 $result = $randNumb1 * $randNumb2;
                 break;
-            default:
-                return false;
         }
         $queistion = "{$randNumb1}{$chChar}{$randNumb2}";
         answer($queistion, $result, $count);
