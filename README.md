@@ -1,14 +1,14 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/131a0b4a3b14bc576eec/maintainability)](https://codeclimate.com/github/BorisKovFG/php-project-lvl1/maintainability)
 [![Build Status](https://travis-ci.com/BorisKovFG/php-project-lvl1.svg?branch=master)](https://travis-ci.com/BorisKovFG/php-project-lvl1)
 
-#Проект: Игры разума
+# Проект: Игры разума
 
 Это первый мой проект в рамках Hexlet.io. Проект: Игры разума. Немного отошёл от плана: изменил brain-games - добавил выборку игр.
 
 Для установки пакета используя composer, выполните в терминале  `composer global require boriskov/hexlet-game`
 Для удаления пакета используя composer, выполните в терминале  `composer global remove boriskov/hexlet-game`
 
-##Команда запуска игры:
+## Команда запуска игры:
 
 1. `brain-even` Игра: "Проверка на чётность"
 2. `brain-calc` Игра: "Калькулятор"
@@ -16,10 +16,10 @@
 4. `brain-progression` Игра "Арифметическая прогрессия"
 5. `brain-prime` Игра "Простое ли число?"
 
-###Если не хотите писать названия игр в коммандной строке. То выберите любую игру, введя эту комманду:
+### Если не хотите писать названия игр в коммандной строке. То выберите любую игру, введя эту комманду:
 `brain-games` 
 
-##Видео установки и тест игр:
+## Видео установки и тест игр:
 
 brain-even
 [![asciicast](https://asciinema.org/a/4hIwTvoPFpBN8O0XZtzxml5oG.svg)](https://asciinema.org/a/4hIwTvoPFpBN8O0XZtzxml5oG)
