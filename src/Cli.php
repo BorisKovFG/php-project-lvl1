@@ -16,7 +16,7 @@ function hello($textOfQuestion)
 }
 
 function answer($queistion, $result, &$count)
-{  
+{
     line("Question: {$queistion}");
     $answer = prompt('Your answer: ');
     if ($answer === (string) $result) {
@@ -29,4 +29,3 @@ function answer($queistion, $result, &$count)
         return;
     }
 }
-
