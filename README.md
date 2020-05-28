@@ -5,9 +5,36 @@
 
 Команда запуска игры:
 
-brain-even;
-brain-calc,
-brain-gcd,
+brain-even
+
+brain-calc
+
+brain-gcd
+
 brain-progression
 
-[![asciicast](https://asciinema.org/a/n53tJaZ8FcTcnGuhTX7JG7sNl.svg)](https://asciinema.org/a/n53tJaZ8FcTcnGuhTX7JG7sNl)
+brain-prime
+
+brain-games 
+
+Видео установки игры и тест игры:
+
+brain-even
+[![asciicast](https://asciinema.org/a/4hIwTvoPFpBN8O0XZtzxml5oG.svg)](https://asciinema.org/a/4hIwTvoPFpBN8O0XZtzxml5oG)
+
+brain-calc
+[![asciicast](https://asciinema.org/a/334717.svg)](https://asciinema.org/a/334717)
+
+brain-gcd
+[![asciicast](https://asciinema.org/a/334718.svg)](https://asciinema.org/a/334718)
+
+brain-progression
+[![asciicast](https://asciinema.org/a/334719.svg)](https://asciinema.org/a/334719)
+
+brain-prime
+[![asciicast](https://asciinema.org/a/334720.svg)](https://asciinema.org/a/334720)
+
+Если не хочется выбирать псать в коммандной строке название игр можно выбрать в одном месте:
+
+brain-games 
+[![asciicast](https://asciinema.org/a/334721.svg)](https://asciinema.org/a/334721)
