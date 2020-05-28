@@ -7,7 +7,7 @@ namespace BrainGames\Gcd;
   use function BrainGames\Cli\hello;
   use function BrainGames\Cli\answer;
 
-function run()
+function runGcd()
 {
     $textOfQuestion = "Find the greatest common divisor of given numbers.";
     $name = hello($textOfQuestion);

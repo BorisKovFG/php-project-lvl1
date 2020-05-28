@@ -7,7 +7,7 @@ namespace BrainGames\Even;
   use function BrainGames\Cli\hello;
   use function BrainGames\Cli\answer;
 
-function run()
+function runEven()
 {
     $textOfQuestion = 'Answer "yes" if the number is even, otherwise answer "no"';
     $name = hello($textOfQuestion);

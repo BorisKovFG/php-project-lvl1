@@ -21,7 +21,8 @@
             "src/games/brain-calc.php",
             "src/games/brain-gcd.php",
             "src/games/brain-progression.php",
-            "src/games/brain-prime.php"
+            "src/games/brain-prime.php",
+            "src/games/brain-games.php"
         ]
     },
     "bin": [

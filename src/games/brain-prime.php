@@ -7,7 +7,7 @@ namespace BrainGames\Prime;
   use function BrainGames\Cli\hello;
   use function BrainGames\Cli\answer;
 
-function run()
+function runPrime()
 {
     $textOfQuestion = 'Answer "yes" if given number is prime. Otherwise answer "no".';
     $name = hello($textOfQuestion);

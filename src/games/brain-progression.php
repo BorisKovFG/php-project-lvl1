@@ -7,7 +7,7 @@ namespace BrainGames\Progression;
   use function BrainGames\Cli\hello;
   use function BrainGames\Cli\answer;
 
-function run()
+function runProgression()
 {
     $textOfQuestion = "What number is missing in the progression?";
     $name = hello($textOfQuestion);

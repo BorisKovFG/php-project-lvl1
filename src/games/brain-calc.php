@@ -7,7 +7,7 @@ namespace BrainGames\Calc;
   use function BrainGames\Cli\hello;
   use function BrainGames\Cli\answer;
 
-function run()
+function runCalc()
 {
     $textOfQuestion = "What is the result of the expression?";
     $name = hello($textOfQuestion);
