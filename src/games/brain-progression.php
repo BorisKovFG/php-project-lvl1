@@ -13,19 +13,19 @@ function runProgression()
     $name = hello($textOfQuestion);
     $count = 0;
     while ($count < 3) {
-        $except = rand(0, 9);
-        $d = rand(1, 9);
-        $n = 10;
-        $cur = [];
-        $next = $d;
+        $arrayException = rand(0, 9);
+        $rangeOfArray = rand(1, 9);
+        $countOfArray = 10;
+        $curNumber = [];
+        $nextrNumber = $rangeOfArray;
         $result = 0;
-        for ($i = 0; $i < $n; $i++) {
-            $cur[$i] = $next;
-            $next += $d;
+        for ($i = 0; $i < $countOfArray; $i++) {
+            $curNumber[$i] = $nextrNumber;
+            $nextrNumber += $rangeOfArray;
         }
-        $result = $cur[$except];
-        $cur[$except] = "..";
-        $queistion = implode(" ", $cur);
+        $result = $curNumber[$arrayException];
+        $curNumber[$arrayException] = "..";
+        $queistion = implode(" ", $curNumber);
         answer($queistion, $result, $count);
     }
     line("Congratulations, {$name}!");

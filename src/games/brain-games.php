@@ -13,7 +13,7 @@ namespace BrainGames\BrainGames;
 
 function runBrainGames()
 {
-    line("\nPlease, chose № of game for playing!\n");
+    line("\nPlease, choose № of game for playing!\n");
     $headers = array(' № ', 'Name of Game');
     $data = array (array(' 1 ', 'brain-even'), array(' 2 ', 'brain-calc'), array(' 3 ', 'brain-gcd'),
     array(' 4 ', 'brain-progression'), array(' 5 ', 'brain-prime'));
