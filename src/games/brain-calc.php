@@ -4,21 +4,18 @@ namespace BrainGames\Calc;
 
   use function cli\line;
   use function cli\prompt;
-  use function BrainGames\Cli\hello;
-  use function BrainGames\Cli\answer;
+  use function BrainGames\Cli\gameExecution;
 
 function runCalc()
 {
     $textOfQuestion = "What is the result of the expression?";
-    $name = hello($textOfQuestion);
-    $count = 0;
-    while ($count < 3) {
+    $dataForGame = function () {
         $randNumb1 = rand(0, 100);
         $randNumb2 = rand(0, 100);
         $char = ["+", "-", "*"];
-        $chChar = $char [rand(0, 2)];
+        $arOperator = $char [rand(0, 2)];
         $result = 0;
-        switch ($chChar) {
+        switch ($arOperator) {
             case "-":
                 $result = $randNumb1 - $randNumb2;
                 break;
@@ -29,8 +26,8 @@ function runCalc()
                 $result = $randNumb1 * $randNumb2;
                 break;
         }
-        $queistion = "{$randNumb1}{$chChar}{$randNumb2}";
-        answer($queistion, $result, $count);
-    }
-    line("Congratulations, {$name}!");
+        $question = "{$randNumb1}{$arOperator}{$randNumb2}";
+        return [$question, $result];
+    };
+    gameExecution($textOfQuestion, $dataForGame);
 }

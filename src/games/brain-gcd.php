@@ -4,15 +4,12 @@ namespace BrainGames\Gcd;
 
   use function cli\line;
   use function cli\prompt;
-  use function BrainGames\Cli\hello;
-  use function BrainGames\Cli\answer;
+  use function BrainGames\Cli\gameExecution;
 
 function runGcd()
 {
     $textOfQuestion = "Find the greatest common divisor of given numbers.";
-    $name = hello($textOfQuestion);
-    $count = 0;
-    while ($count < 3) {
+    $dataForGame = function () {
         $randNumb1 = rand(0, 100);
         $randNumb2 = rand(0, 100);
         $firstCheckNumber = ($randNumb1 > $randNumb2) ? $randNumb2 : $randNumb1;
@@ -24,7 +21,7 @@ function runGcd()
             $firstCheckNumber--;
         }
         $question = "{$randNumb1} {$randNumb2}";
-        answer($question, $result, $count);
-    }
-    line("Congratulations, {$name}!");
+        return [$question, $result];
+    };
+    gameExecution($textOfQuestion, $dataForGame);
 }
