@@ -22,7 +22,7 @@
             "src/games/brain-gcd.php",
             "src/games/brain-progression.php",
             "src/games/brain-prime.php",
-            "src/games/brain-games.php"
+            "src/brain-games.php"
         ]
     },
     "bin": [

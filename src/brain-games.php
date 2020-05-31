@@ -1,6 +1,6 @@
 <?php
 
-namespace BrainGames\BrainGames;
+namespace BrainGames;
 
   use function cli\line;
   use function cli\prompt;
@@ -13,31 +13,30 @@ namespace BrainGames\BrainGames;
 
 function runBrainGames()
 {
+    $listOfNames = get_included_files();
+    $data = [];
+    $numberOfGame = 0;
+    foreach ($listOfNames as $game) {
+        if (stristr($game, "/games/")) {
+            $numberOfGame++;
+            //  delleted all before "brain" and ".php"
+            $game = substr(substr($game, stripos($game, "brain")), 0, -4); 
+            $data[$numberOfGame] = array($numberOfGame, $game);
+        }  
+    }
     line("\nPlease, choose № of game for playing!\n");
     $headers = array(' № ', 'Name of Game');
-    $data = array (array(' 1 ', 'brain-even'), array(' 2 ', 'brain-calc'), array(' 3 ', 'brain-gcd'),
-    array(' 4 ', 'brain-progression'), array(' 5 ', 'brain-prime'));
     $table = new \cli\Table();
     $table->setHeaders($headers);
     $table->setRows($data);
     $table->setRenderer(new \cli\table\Ascii([3, 18]));
     $table->display();
     $choise = prompt('Number');
-    switch ($choise) {
-        case "1":
-            runEven();
-            break;
-        case "2":
-            runCalc();
-            break;
-        case "3":
-            runGcd();
-            break;
-        case "4":
-            runProgression();
-            break;
-        case "5":
-            runPrime();
-            break;
+    foreach ($data as $val) { 
+        if ((int)$choise === $val[0]) {
+            $runFunction = 'BrainGames\\'.ucfirst(substr($val[1], 6))."\\run".ucfirst(substr($val[1], 6));
+            $runFunction();
+        }
     }
+    
 }
