@@ -20,9 +20,9 @@ function runBrainGames()
         if (stristr($game, "/games/")) {
             $numberOfGame++;
             //  delleted all before "brain" and ".php"
-            $game = substr(substr($game, stripos($game, "brain")), 0, -4); 
+            $game = substr(substr($game, stripos($game, "brain")), 0, -4);
             $data[$numberOfGame] = array($numberOfGame, $game);
-        }  
+        }
     }
     line("\nPlease, choose № of game for playing!\n");
     $headers = array(' № ', 'Name of Game');
@@ -32,11 +32,10 @@ function runBrainGames()
     $table->setRenderer(new \cli\table\Ascii([3, 18]));
     $table->display();
     $choise = prompt('Number');
-    foreach ($data as $val) { 
+    foreach ($data as $val) {
         if ((int)$choise === $val[0]) {
-            $runFunction = 'BrainGames\\'.ucfirst(substr($val[1], 6))."\\run".ucfirst(substr($val[1], 6));
+            $runFunction = 'BrainGames\\' . ucfirst(substr($val[1], 6)) . "\\run" . ucfirst(substr($val[1], 6));
             $runFunction();
         }
     }
-    
 }
