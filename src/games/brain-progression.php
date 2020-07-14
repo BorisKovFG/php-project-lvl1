@@ -2,27 +2,25 @@
 
 namespace BrainGames\Progression;
 
-  use function cli\line;
-  use function cli\prompt;
-  use function BrainGames\Cli\gameExecution;
+use function BrainGames\Cli\gameExecution;
 
 function runProgression()
 {
     $textOfQuestion = "What number is missing in the progression?";
-    $dataForGame = function () {
-        $arrayException = rand(0, 9);
-        $rangeOfArray = rand(1, 9);
-        $countOfArray = 10;
-        $curNumber = [];
-        $nextrNumber = $rangeOfArray;
+    $getDataForGame = function () {
+        $hiddenElement = rand(0, 9);
+        $progressionStep = rand(1, 9);
+        $progressionLength = 10;
+        $progressionElement = [];
+        $firstElement = $progressionStep;
         $result = 0;
-        for ($i = 0; $i < $countOfArray; $i++) {
-            $curNumber[$i] = $nextrNumber + $rangeOfArray * $i;
+        for ($i = 0; $i < $progressionLength; $i++) {
+            $progressionElement[$i] = $firstElement + $progressionStep * $i;
         }
-        $result = $curNumber[$arrayException];
-        $curNumber[$arrayException] = "..";
-        $question = implode(" ", $curNumber);
-        return [$question, $result];
+        $correctAnswer = $progressionElement[$hiddenElement];
+        $progressionElement[$hiddenElement] = "..";
+        $question = implode(" ", $progressionElement);
+        return [$question, $correctAnswer];
     };
-    gameExecution($textOfQuestion, $dataForGame);
+    gameExecution($textOfQuestion, $getDataForGame);
 }

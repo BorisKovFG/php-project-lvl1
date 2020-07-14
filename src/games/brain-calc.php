@@ -9,13 +9,14 @@ namespace BrainGames\Calc;
 function runCalc()
 {
     $textOfQuestion = "What is the result of the expression?";
-    $dataForGame = function () {
+    $getDataForGame = function () {
         $randNumb1 = rand(0, 100);
         $randNumb2 = rand(0, 100);
-        $char = ["+", "-", "*"];
-        $arOperator = $char [rand(0, 2)];
+        $TOperation = ["+", "-", "*"];
+        $countOfOperation = count($TOperation) - 1;
+        $operation = $typeOfOperation [rand(0, $countOfOperation)];
         $result = 0;
-        switch ($arOperator) {
+        switch ($operation) {
             case "-":
                 $result = $randNumb1 - $randNumb2;
                 break;
@@ -26,8 +27,8 @@ function runCalc()
                 $result = $randNumb1 * $randNumb2;
                 break;
         }
-        $question = "{$randNumb1}{$arOperator}{$randNumb2}";
+        $question = "{$randNumb1}{$operation}{$randNumb2}";
         return [$question, $result];
     };
-    gameExecution($textOfQuestion, $dataForGame);
+    gameExecution($textOfQuestion, $getDataForGame);
 }
