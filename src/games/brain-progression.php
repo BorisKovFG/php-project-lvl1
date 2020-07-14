@@ -20,7 +20,7 @@ function runProgression()
         $correctAnswer = $progressionElement[$hiddenElement];
         $progressionElement[$hiddenElement] = "..";
         $question = implode(" ", $progressionElement);
-        return [$question, $correctAnswer];
+        return [$question, (string) $correctAnswer];
     };
     gameExecution($textOfQuestion, $getDataForGame);
 }

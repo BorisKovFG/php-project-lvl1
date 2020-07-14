@@ -16,9 +16,9 @@ function gameExecution($textOfQuestion, $getDataForGame)
     $numberOfAttempts = 3;
     for ($i = 0; $i < $numberOfAttempts = 3; $i++) {
         [$question, $result] = $getDataForGame();
-        line("Question!!!: {$question}");
+        line("Question: {$question}");
         $answer = prompt('Your answer: ');
-        if ($result ===  (int) $answer) {
+        if ($result ===  $answer) {
             line("Correct!");
         } else {
             line("{$answer} is wrong answer ;(. Correct answer was {$result}");

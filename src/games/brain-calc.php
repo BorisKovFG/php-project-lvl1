@@ -14,7 +14,7 @@ function runCalc()
         $randNumb2 = rand(0, 100);
         $TOperation = ["+", "-", "*"];
         $countOfOperation = count($TOperation) - 1;
-        $operation = $typeOfOperation [rand(0, $countOfOperation)];
+        $operation = $TOperation [rand(0, $countOfOperation)];
         $result = 0;
         switch ($operation) {
             case "-":
@@ -28,7 +28,7 @@ function runCalc()
                 break;
         }
         $question = "{$randNumb1}{$operation}{$randNumb2}";
-        return [$question, $result];
+        return [$question, (string) $result];
     };
     gameExecution($textOfQuestion, $getDataForGame);
 }
