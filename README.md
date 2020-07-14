@@ -24,17 +24,23 @@
 brain-even
 
 [![asciicast](https://asciinema.org/a/347382.svg)](https://asciinema.org/a/347382) 
+
 brain-calc 
+
 [![asciicast](https://asciinema.org/a/347381.svg)](https://asciinema.org/a/347381)
 
 brain-gcd 
+
 [![asciicast](https://asciinema.org/a/347393.svg)](https://asciinema.org/a/347393)
 
 brain-progression 
+
 [![asciicast](https://asciinema.org/a/347395.svg)](https://asciinema.org/a/347395)
 
 brain-prime 
+
 [![asciicast](https://asciinema.org/a/347394.svg)](https://asciinema.org/a/347394)
 
 brain-games 
+
 [![asciicast](https://asciinema.org/a/334721.svg)](https://asciinema.org/a/334721)
