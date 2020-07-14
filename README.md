@@ -22,19 +22,19 @@
 ## Видео установки и тест игр:
 
 brain-even
-[![asciicast](https://asciinema.org/a/4hIwTvoPFpBN8O0XZtzxml5oG.svg)](https://asciinema.org/a/4hIwTvoPFpBN8O0XZtzxml5oG)
+[![asciicast](https://asciinema.org/a/347382.svg)](https://asciinema.org/a/347382)
 
 brain-calc
-[![asciicast](https://asciinema.org/a/334717.svg)](https://asciinema.org/a/334717)
+[![asciicast](https://asciinema.org/a/347381.svg)](https://asciinema.org/a/347381)
 
 brain-gcd
-[![asciicast](https://asciinema.org/a/334718.svg)](https://asciinema.org/a/334718)
+[![asciicast](https://asciinema.org/a/347393.svg)](https://asciinema.org/a/347393)
 
 brain-progression
-[![asciicast](https://asciinema.org/a/334719.svg)](https://asciinema.org/a/334719)
+[![asciicast](https://asciinema.org/a/347395.svg)](https://asciinema.org/a/347395)
 
 brain-prime
-[![asciicast](https://asciinema.org/a/334720.svg)](https://asciinema.org/a/334720)
+[![asciicast](https://asciinema.org/a/347394.svg)](https://asciinema.org/a/347394)
 
 brain-games 
 [![asciicast](https://asciinema.org/a/334721.svg)](https://asciinema.org/a/334721)
