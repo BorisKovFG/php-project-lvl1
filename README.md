@@ -3,7 +3,7 @@
 
 # Проект: Игры разума
 
-Это первый мой проект в рамках Hexlet.io. Проект: Игры разума. Немного отошёл от плана: изменил brain-games - добавил выборку игр.
+Это первый мой проект в рамках Hexlet.io. Проект: Игры разума. 
 
 Для установки пакета используя composer, выполните в терминале  `composer global require boriskov/hexlet-game`
 Для удаления пакета используя composer, выполните в терминале  `composer global remove boriskov/hexlet-game`
@@ -16,31 +16,27 @@
 4. `brain-progression` Игра "Арифметическая прогрессия"
 5. `brain-prime` Игра "Простое ли число?"
 
-### Если не хотите писать названия игр в коммандной строке. То выберите любую игру, введя эту комманду:
-`brain-games` 
 
 ## Видео установки и тест игр:
 
 brain-even
 
-[![asciicast](https://asciinema.org/a/347382.svg)](https://asciinema.org/a/347382) 
+[![asciicast](https://asciinema.org/a/417223.svg)](https://asciinema.org/a/417223) 
 
 brain-calc 
 
-[![asciicast](https://asciinema.org/a/347381.svg)](https://asciinema.org/a/347381)
+[![asciicast](https://asciinema.org/a/417222.svg)](https://asciinema.org/a/417222)
 
 brain-gcd 
 
-[![asciicast](https://asciinema.org/a/347393.svg)](https://asciinema.org/a/347393)
+[![asciicast](https://asciinema.org/a/417219.svg)](https://asciinema.org/a/417219)
 
 brain-progression 
 
-[![asciicast](https://asciinema.org/a/347395.svg)](https://asciinema.org/a/347395)
+[![asciicast](https://asciinema.org/a/417218.svg)](https://asciinema.org/a/417218)
 
 brain-prime 
 
-[![asciicast](https://asciinema.org/a/347394.svg)](https://asciinema.org/a/347394)
+[![asciicast](https://asciinema.org/a/417221.svg)](https://asciinema.org/a/417221)
 
-brain-games 
 
-[![asciicast](https://asciinema.org/a/334721.svg)](https://asciinema.org/a/334721)

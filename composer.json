@@ -8,21 +8,14 @@
             "email": "multiallin@gmail.com"
         }
     ],
-    "scripts": {
-    "phpcs": "phpcs"
-    },
-    "require": {
-        "wp-cli/php-cli-tools": "^0.11.11"
-    },
     "autoload": {
         "files": [
-            "src/Cli.php",
-            "src/games/brain-even.php",
-            "src/games/brain-calc.php",
-            "src/games/brain-gcd.php",
-            "src/games/brain-progression.php",
-            "src/games/brain-prime.php",
-            "src/brain-games.php"
+            "src/Games/brain-even.php",
+            "src/Games/brain-calc.php",
+            "src/Games/brain-gcd.php",
+            "src/Games/brain-progression.php",
+            "src/Games/brain-prime.php",
+            "src/Engine.php"
         ]
     },
     "bin": [
@@ -33,6 +26,9 @@
          "bin/brain-progression",
          "bin/brain-prime"
     ],
+    "require": {
+        "wp-cli/php-cli-tools": "^0.11.11"
+    },
     "require-dev": {
         "squizlabs/php_codesniffer": "^3.5"
     }
